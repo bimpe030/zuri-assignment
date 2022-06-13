@@ -1,0 +1,80 @@
+ body{
+    /* background: linear-gradient(90deg, rgb(19, 100, 252, 0.9), rgb(226, 51, 226, 0.9)), url("../Images/bacground4.jpg"); */
+    background: linear-gradient(to bottom right, rgb(1, 141, 1, 0.9), rgb(5, 172, 228, 0.9)), url("../Images/images\ \(46\).jpeg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.registration-container {
+    width: 39%;
+    margin: 0 auto;
+}
+
+.registration-container input, .length{
+    width: 90%;
+    padding: 0.9rem 0.5rem;
+    margin-bottom: 0.9rem;
+    border: 2px solid white;
+    color: white !important;
+    border-radius: 8px;
+    background: transparent;
+
+}
+
+.aside{
+    width: 2rem !important;
+    padding: 0rem !important;
+    background-color: white !important;
+
+}
+.registration-container input::placeholder {
+    color: white;
+    font-size: 17px;
+}
+
+button{
+    width: 50%;
+    padding: 1rem;
+    font-size: 17px;
+    border: 2px solid white;
+    color: white !important;
+    border-radius: 8px;
+    background: rgb(7, 99, 7);
+}
+
+.length{
+    width: 95% !important;
+    color: white;
+    font-size: 17px;
+}
+
+h1{
+    font-size: 40px;
+    color: white;
+}
+
+fieldset{
+    width: inherit;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 1rem 5rem;
+}
+
+legend{
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 10px 29px;
+    text-transform: uppercase;
+    color: white;
+}
+
+option{
+    background: transparent !important;
+    color: black !important;
+}
+
+@media only screen and (max-width: 913px){
+    
+}
