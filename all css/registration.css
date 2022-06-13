@@ -62,7 +62,7 @@ ul {
 }
 
 .nav .nav-items .nav-link {
-    padding: 1.6rem 1rem;
+    padding: 1.6rem 1rem !important;
 }
 
 .nav .nav-items .nav-link a {
@@ -90,6 +90,32 @@ ul {
     padding: 0 1rem;
     font-size: 1.4rem;
     color: teal;
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 0;
+
+}
+
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    border: 2px solid black;
+    padding: 0.2rem 0.5rem;
+    color: var(--text-gray);
+}
+
+.collapse {
+    height: 27rem !important;
 }
 
 .registration-container {
@@ -120,7 +146,7 @@ ul {
 }
 
 button{
-    width: 50%;
+    width: 100%;
     padding: 1rem;
     font-size: 17px;
     border: 2px solid white;
@@ -162,6 +188,45 @@ option{
     color: black !important;
 }
 
+.support {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    background: rgba(134, 253, 192, 0.9);
+    height: 5rem;
+    width: 100%;
+    margin-top: 2rem !important;
+}
+
+.support a {
+    color: Teal;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 913px){
+
+    .nav .nav-menu,
+        .nav .nav-items,
+        .cover,
+        .main-side {
+            flex-direction: column;
+    }
+
+    .registration-container{
+        width: 90%;
+        padding: 0 1rem;
+    }
+
+    .nav .toggle-collapse {
+    display: initial;
+    }
+
+    .support {
+            flex-direction: column;
+            gap: 1rem;
+            height: 7rem;
+     }
+
     
 }
