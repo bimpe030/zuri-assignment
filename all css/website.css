@@ -7,7 +7,6 @@ body {
     font-family: 'Recursive', sans-serif;
     margin: 0%;
     box-sizing: border-box;
-    overflow-x: hidden;
     background: linear-gradient(rgb(255, 255, 255, 0.9), rgb(255, 255, 255, 0.9)), url("../Images/bacground4.jpg");
 }
 
@@ -93,7 +92,7 @@ ul{
 }
 
 .main-side{
-    padding-top: 3rem;
+    padding: 3rem 0;
     width: 85%;
     margin: auto;
     display: flex;
@@ -109,6 +108,7 @@ ul{
 
 .main-side p{
     font-size: 20px;
+    margin-bottom: 2rem;
 }
 
 .main-content a{
@@ -117,20 +117,15 @@ ul{
     box-shadow: none;
     background-color: teal;
     border: rgb(8, 59, 59);
+    color: white;
+    font-size: 17px;
     
 }
 
-.main-content button:hover{
-    border: 2px solid rgb(8, 59, 59);
-}
-
-.main-content a{
-    color: white;
-    font-size: 17px;
-}
-
-.main-content:hover a{
+.main-content a:hover{
     color: teal;
+    border: 2px solid rgb(8, 59, 59);
+    background-color: white;
 }
 
 
