@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lobster&family=Pacifico&family=Recursive:wght@300;400;500;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,300;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,500;1,8..144,900&family=Satisfy&family=Spline+Sans+Mono:wght@300;400;500;700&display=swap');
 
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html,
 body {
     font-family: 'Roboto Serif', serif;
     margin: 0%;
     box-sizing: border-box;
     background: linear-gradient(rgb(255, 255, 255, 0.9), rgb(255, 255, 255, 0.9)), url("../Images/bacground4.jpg");
+    height: 100vh;
 }
 
 /*-------------------Global classes------------------------*/
@@ -30,12 +35,13 @@ ul{
 
 /*-------------------Global classes------------------------*/
 .nav {
-    background: white;
     padding: 0 2rem;
     height: 4rem;
     overflow: hidden;
     transition: height 1s ease-in-out;
     background-color: rgba(134, 253, 192, 0.9);
+    position: fixed;
+    width: 100%;
 }
 
 .nav .nav-menu {
@@ -92,7 +98,7 @@ ul{
 }
 
 .main-side{
-    padding: 3rem 0;
+    padding: 6.8rem 0 3rem 0;
     width: 85%;
     margin: auto;
     display: flex;
@@ -187,20 +193,19 @@ ul{
 /*---------------------Contact Page-----------------------*/
 
 .cover-head{
-    height: 100vh;
     background: linear-gradient(90deg, rgb(19, 100, 252, 0.9), rgb(226, 51, 226, 0.9)),
     url("../Images/bacground4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 0 0 2rem 0;
     font-family: 'Roboto Serif', serif;
     /* background: linear-gradient(90deg, rgb(19, 100, 252), rgb(226, 51, 226));    */
 }
 
 .container-cover{
     width: 70%;
-    margin: 3% auto;
+    margin: 0 auto;
+    padding: 5rem 0 0.5rem 0;
 }
 
 .cover{
@@ -213,15 +218,14 @@ ul{
 }
 
 .cover-text, .cover-style{
-    width: 50%;
+    width: 100%;
     height: 100%;
-    padding: 1rem 1.5rem;
-
 }
 
 .cover-text h2{
     color: darkblue;
     font-size: 30px;
+    margin-bottom: 1rem;
 }
 
 .cover-style i {
@@ -238,22 +242,30 @@ ul{
     padding: 1rem 0 !important;
 }
 
+.cover-text{
+    padding: 1rem 3rem;
+}
+
 input{
     padding: 0.9rem 0rem 0.9rem 2.5rem;
     margin-bottom: 0.5rem;
     border-radius: 20px;
-    width: 75%;
+    width: 100%;
 }
 
 textarea{
     padding: 0.5rem 1.2rem;
     margin-bottom: 0.5rem;
     border-radius: 20px;
-    width: 75%;
+    width: 100%;
+}
+
+form{
+    width: 100%;
 }
 
 .cover-text button{
-    width: 75%;
+    width: 100%;
     text-align: center;
     padding: 0.9rem 1rem;
     margin-bottom: 0.5rem;
@@ -353,7 +365,7 @@ input, button, textarea{
 .nav .toggle-collapse {
     position: absolute;
     top: 0;
-    width: 80%;
+    right: 29px;
     cursor: pointer;
     display: none;
 }
@@ -420,12 +432,11 @@ input, button, textarea{
     }
 
     .cover-text{
-        padding: 0.5rem; 
+        padding: 2rem; 
     }
 
     .cover-style{
         border-radius: 20px;
-        text-align: left;
     }
 
     .support {
