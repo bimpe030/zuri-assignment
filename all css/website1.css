@@ -4,7 +4,6 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 a {
@@ -29,13 +28,11 @@ ul {
 .nav {
     background: white;
     padding: 0 2rem;
-    height: 4rem;
+    height: 0rem;
+    min-height: 10vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
     background-color: rgba(134, 253, 192, 0.9);
-    position: fixed;
-    width: 100%;
-    z-index: 1;
 }
 
 .nav .nav-menu {
@@ -93,7 +90,7 @@ ul {
 .nav .toggle-collapse {
     position: absolute;
     top: 0;
-    right: 29px;
+    width: 80%;
     cursor: pointer;
     display: none;
 }
@@ -126,13 +123,12 @@ body{
 
 .sign-cover{
     width: 100%;
-    padding-top: 5rem;
 }
 
 
 .sign-container{
     width: 75%;
-    margin: 0 auto;
+    margin: 3% auto;
     display: flex;
 }
 
@@ -149,7 +145,7 @@ body{
 }
 
 input{
-    width: 100%;
+    width: 90%;
     padding: 1rem 0.2rem;
     margin-bottom: 0.5rem;
     border-top: none;
@@ -195,7 +191,7 @@ input{
 }
 
 .placement-over{
-    padding: 2rem;
+    padding: 3rem 1rem 4rem 1rem;
     background-color: white;
 
 }

@@ -3,13 +3,13 @@
  *{
     padding: 0%;
     margin: 0%;
-    box-sizing: border-box;
  }
  
  
  body{
+    /* background: linear-gradient(90deg, rgb(19, 100, 252, 0.9), rgb(226, 51, 226, 0.9)), url("../Images/bacground4.jpg"); */
     background: linear-gradient(to bottom right, rgb(1, 141, 1, 0.9), rgb(5, 172, 228, 0.9)), url("../Images/images\ \(46\).jpeg");
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Roboto Serif', serif;
@@ -25,19 +25,23 @@ a {
     flex-wrap: wrap;
 }
 
+/* .flexbox{
+    display: flex;
+} */
+
 ul {
     list-style: none;
 }
 
 /*-------------------Global classes------------------------*/
 .nav {
+    background: white;
     padding: 0 2rem;
-    height: 4rem;
+    height: 0rem;
+    min-height: 10vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
     background-color: rgba(134, 253, 192, 0.9);
-    position: fixed;
-    width: 100%;
 }
 
 .nav .nav-menu {
@@ -95,13 +99,14 @@ ul {
 .nav .toggle-collapse {
     position: absolute;
     top: 0;
-    right: 25px;
+    width: 80%;
     cursor: pointer;
     display: none;
 }
 
 .nav .toggle-collapse .toggle-icons {
     display: flex;
+    justify-content: flex-end;
     padding: 1rem 0;
 
 }
@@ -118,29 +123,27 @@ ul {
 }
 
 .registration-container {
-    width: 40%;
-    margin: 0 auto !important;
-    padding: 3.5rem 0;
+    width: 39%;
+    margin: 2% auto;
 }
 
 .registration-container input, .length{
-    width: 100%;
-    padding: 0.9rem 1rem;
+    width: 90%;
+    padding: 0.9rem 0.5rem;
     margin-bottom: 0.9rem;
     border: 2px solid white;
     color: white !important;
     border-radius: 8px;
     background: transparent;
-    font-size: 17px;
 
 }
 
 .aside{
     width: 2rem !important;
+    padding: 0rem !important;
     background-color: white !important;
 
 }
-
 .registration-container input::placeholder {
     color: white;
     font-size: 17px;
@@ -148,28 +151,31 @@ ul {
 
 button{
     width: 100%;
-    padding: 1rem 0;
+    padding: 1rem;
     font-size: 17px;
-    text-align: center;
-    text-transform: uppercase;
     border: 2px solid white;
     color: white !important;
     border-radius: 8px;
     background: rgb(7, 99, 7);
-    margin: 1rem 0;
 }
 
+.length{
+    width: 95% !important;
+    color: white;
+    font-size: 17px;
+}
 
 h1{
     font-size: 35px;
     color: white;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
 }
 
 fieldset{
+    width: inherit;
     border: 2px solid white;
     border-radius: 15px;
-    padding: 1.5rem 5rem;
+    padding: 1rem 5rem;
 }
 
 legend{
@@ -179,7 +185,6 @@ legend{
     padding: 10px 29px;
     text-transform: uppercase;
     color: white;
-    font-size: 25px;
 }
 
 option{
@@ -205,17 +210,17 @@ option{
 
 @media only screen and (max-width: 913px){
 
-    .flexbox, .nav .nav-items{
+    .nav .nav-menu,
+        .nav .nav-items,
+        .cover,
+        .main-side {
             flex-direction: column;
     }
-    
-    .field{
-        padding: 1.5rem 1rem;
-    }
-/*     
+
     .registration-container{
-        width: 100%;
-    } */
+        width: 90%;
+        padding: 0 1rem;
+    }
 
     .nav .toggle-collapse {
     display: initial;
@@ -228,12 +233,4 @@ option{
      }
 
     
-}
-
-@media only screen and (max-width: 320px){
-    .registration-container{
-        width: 80%;
-        margin: auto;
-    }
-
 }
