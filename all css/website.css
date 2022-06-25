@@ -200,7 +200,6 @@ ul{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 0 0 2rem 0;
     font-family: 'Roboto Serif', serif;
     /* background: linear-gradient(90deg, rgb(19, 100, 252), rgb(226, 51, 226));    */
 }
@@ -368,7 +367,7 @@ input, button, textarea{
 .nav .toggle-collapse {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 29px;
     cursor: pointer;
     display: none;
 }
