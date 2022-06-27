@@ -12,7 +12,7 @@ body {
     margin: 0%;
     box-sizing: border-box;
     background: linear-gradient(rgb(255, 255, 255, 0.9), rgb(255, 255, 255, 0.9)), url("../Images/bacground4.jpg");
-/*   height: 100vh; */
+  height: 100vh;
 }
 
 /*-------------------Global classes------------------------*/
@@ -100,7 +100,7 @@ ul{
 }
 
 .main-side{
-    padding: 5rem 0 3.9rem 0;
+    padding: 6rem 0 3.9rem 0;
     width: 85%;
     margin: auto;
     display: flex;
