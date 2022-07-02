@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
+    <title>Home</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -13,7 +13,8 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./all css/website.css" />
+    <link rel="stylesheet" href="./css/style.css">
+
   </head>
   <body>
     <nav class="nav">
@@ -25,9 +26,9 @@
         <ul class="nav-items">
           <li class="nav-link"><a href="./index.html">Home</a></li>
           <li class="nav-link">
-            <a href="./html files/registration.html">Registration</a>
+            <a href="./html/registration.html">Registration</a>
           </li>
-          <li class="nav-link"><a href="./html files/login.html">Login</a></li>
+          <li class="nav-link"><a href="./html/login.html">Login</a></li>
         </ul>
 
         <div class="social">
@@ -50,99 +51,59 @@
       </div>
     </nav>
 
-    <main class="main-side">
-      <div class="main-content" style="width: 49%">
-        <h1>Adelanwa Zainab Adebimpe</h1>
-        <p>I'm a Front End Developer from Lagos, Nigeria</p>
-        <p>
-          I enjoy taking complex problems and turning them into simple and
-          beautiful interface designs. I also love the logic and structure of
-          coding and always strive to write elegant and efficient code. whether
-          it be HTML, CSS, JQuery, Javascript or using bootstrap, git,
-          owlcaroussel.
-        </p>
+    <main>
+      <div class="container">
+        <div class="content">
+          <h1>Adelanwa Zainab Adebimpe</h1>
+          <p>I'm a Front End Developer from Lagos, Nigeria</p>
+          <p>
+            I enjoy taking complex problems and turning them into simple and
+            beautiful interface designs. I also love the logic and structure of
+            coding and always strive to write elegant and efficient code.
+            whether it be HTML, CSS, JQuery, Javascript or using bootstrap, git,
+            owlcaroussel.
+          </p>
 
-        <p>
-          When I'm not coding, I enjoy singing and drawing which I am very
-          skilled in.
-        </p>
+          <p style="margin-bottom: 2rem !important;">
+            When I'm not coding, I enjoy singing and drawing which I am very
+            skilled in.
+          </p>
 
-        <a href="./html files/contact.html">Contact Me</a>
-      </div>
+          <a href="./html/contact.html">Contact Me</a>
+        </div>
 
-      <div style="width: 35%" class="pic">
-        <div class="flip-out">
-          <div class="flip-out-inner">
-            <div class="flip-out-front">
-              <img
-                src="./Images/20210808_174919.jpg"
-                alt="Zaine"
-                style="width: 350px; height: 350px"
-              />
-            </div>
-            <div class="flip-out-back">
-              <img
-                src="./Images/Snapchat-410626152.jpg"
-                alt="Zaine"
-                style="width: 350px; height: 350px"
-              />
+        <div class="content spin">
+          <div class="flip-out">
+            <div class="flip-out-inner">
+              <div class="flip-out-front">
+                <img
+                  src="./Images/20210808_174919.jpg"
+                  alt="Zaine"
+                  style="width: 100%; height: 100%"
+                />
+              </div>
+              <div class="flip-out-back">
+                <img
+                  src="./Images/Snapchat-410626152.jpg"
+                  alt="Zaine"
+                  style="width: 100%; height: 100%"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </main>
 
-   <footer>
+    <footer>
       <div class="support">
         <a>Support</a>
         <a>Terms of Use</a>
       </div>
     </footer>
-
-    <!-- <div id="wrapper" style="float: left">
-      <div class="card">
-        <div class="front"></div>
-        <div class="back"></div>
-      </div>
-    </div>
-    <p style="float: left; margin: 65px 0 0 10px">&larr; click me</p> -->
-
-    <!-- <form id="form1">
-      <div id="rotator">
-        <img alt="" src="./Images/20210808_174919.jpg"/>
-        <img alt="" src="./Images/Snapchat-410626152.jpg"/>
-      </div>
-    </form> -->
-
-    <!----------------------Checking----------------------- -->
-
-    <!-- <div style="width: 35%">
-        <div class="flip-out" id="wrapper">
-          <div class="flip-out-inner">
-            <div class="flip-out-front">
-              <img
-                src="./Images/20210808_174919.jpg"
-                alt="Zaine"
-                style="width: 350px; height: 350px"
-              />
-            </div>
-            <div class="flip-out-back">
-              <img
-                src="./Images/Snapchat-410626152.jpg"
-                alt="Zaine"
-                style="width: 350px; height: 350px"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
     
+    <script src="./javascript/Jquery3.6.0.min.js"></script>
 
-      <div class="coin"></div> -->
-    <!----------------------Checking----------------------- -->
-
-    <script src="./javascript file/Jquery3.6.0.min.js"></script>
-
-    <script src="./javascript file/website.js"></script>
+    <script src="./javascript/website.js"></script>
   </body>
 </html>

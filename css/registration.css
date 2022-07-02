@@ -1,47 +1,49 @@
- @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lobster&family=Pacifico&family=Recursive:wght@300;400;500;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,300;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,500;1,8..144,900&family=Satisfy&family=Spline+Sans+Mono:wght@300;400;500;700&display=swap');
- 
- *{
-    padding: 0%;
-    margin: 0%;
-   box-sizing: border-box;
- }
- 
- 
- body{
-    background: linear-gradient(to bottom right, rgb(1, 141, 1, 0.9), rgb(5, 172, 228, 0.9)), url("../Images/images\ \(46\).jpeg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Roboto Serif', serif;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lobster&family=Pacifico&family=Recursive:wght@300;400;500;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,300;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,500;1,8..144,900&family=Satisfy&family=Spline+Sans+Mono:wght@300;400;500;700&display=swap');
+
+* {
+     padding: 0%;
+     margin: 0%;
+     box-sizing: border-box;
+}
+
+
+body {
+     background: linear-gradient(to bottom right, rgb(1, 141, 1, 0.9), rgb(5, 172, 228, 0.9)), url("../Images/images\ \(46\).jpeg");
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     font-family: 'Roboto Serif', serif;
 }
 
 a {
-    text-decoration: none;
+     text-decoration: none;
 }
 
 .flexbox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
 }
 
-/* .flexbox{
+ /* .flexbox{
     display: flex;
 } */
 
 ul {
-    list-style: none;
+     list-style: none;
 }
 
-/*-------------------Global classes------------------------*/
+/* ------------------------Global classes------------------- */
+
+/* -------------------------- Nav Class----------------------------- */
 .nav {
     padding: 0 2rem;
     height: 4rem;
     overflow: hidden;
     transition: height 1s ease-in-out;
     background-color: rgba(134, 253, 192, 0.9);
-  position: fixed;
-  width: 100%;
+    position: fixed;
+    width: 100%;
 }
 
 .nav .nav-menu {
@@ -96,6 +98,10 @@ ul {
     color: teal;
 }
 
+/* --------------------  Nav Closes ------------------- */
+
+/* --------------------  Nav Toogle ------------------- */
+
 .nav .toggle-collapse {
     position: absolute;
     top: 0;
@@ -120,13 +126,24 @@ ul {
     height: 27rem !important;
 }
 
-.registration-container {
+/* -----------x-----------  Nav  Toogle Closes ---------x---------- */
+
+
+/* --------------x-------- Registration container ----------x--------------- */
+
+.registration-container{
     width: 40%;
-    margin: 0 auto !important;
-  padding: 3.5rem 0;
+    height: 100%;
+    margin: 0 auto;
+    padding: 5rem 0 2rem 0;
 }
 
-.registration-container input, .length{
+form{
+    width: 100%;
+}
+
+.registration-container input,
+.length {
     width: 100%;
     padding: 0.9rem 1rem;
     margin-bottom: 0.9rem;
@@ -134,21 +151,22 @@ ul {
     color: white !important;
     border-radius: 8px;
     background: transparent;
-  font-size; 17px;
+    font-size: 17px;
 
 }
 
-.aside{
+.aside {
     width: 2rem !important;
     background-color: white !important;
 
 }
+
 .registration-container input::placeholder {
     color: white;
     font-size: 17px;
 }
 
-button{
+button {
     width: 100%;
     padding: 1rem 0;
     font-size: 17px;
@@ -157,22 +175,22 @@ button{
     color: white !important;
     border-radius: 8px;
     background: rgb(7, 99, 7);
-  margin: 1rem 0;
+    margin: 1rem 0;
 }
 
-h1{
+h1 {
     font-size: 35px;
     color: white;
     margin: 2rem 0;
 }
 
-fieldset{
+fieldset {
     border: 2px solid white;
     border-radius: 15px;
     padding: 1.5rem 5rem;
 }
 
-legend{
+legend {
     background: transparent;
     border: 2px solid white;
     border-radius: 12px;
@@ -182,10 +200,15 @@ legend{
     font-size: 25px;
 }
 
-option{
+option {
     background: transparent !important;
     color: black !important;
 }
+
+/* ---------------x-------- Registration container closes ----x------------ */
+
+
+/* ---------------------------- Footer -------------------------------- */
 
 .support {
     display: flex;
@@ -193,7 +216,7 @@ option{
     align-items: center;
     justify-content: center;
     background: rgba(134, 253, 192, 0.9);
-    height: 5rem;
+    height: 4rem;
     width: 100%;
     margin-top: 2rem !important;
 }
@@ -203,38 +226,32 @@ option{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 913px){
+/* ----------------x-------------Footer Closes ------------x-------*/
 
-        .nav .nav-items, .flexbox {
-            flex-direction: column;
+@media only screen and (max-width: 913px) {
+
+    .nav .nav-items,
+    .flexbox {
+        flex-direction: column;
     }
 
-  .field{
-    padding: 1.5rem 1rem;
-  }
-
-/*     .registration-container{
-        width: 90%;
-        padding: 0 1rem;
-    } */
+    .field {
+        padding: 1.5rem 1rem;
+    }
 
     .nav .toggle-collapse {
-    display: initial;
+            display: initial;
     }
-
+    
     .support {
             flex-direction: column;
             gap: 1rem;
             height: 7rem;
-     }
+    }
 
-    
-}
+    .registration-container{
+        width: 80%;
+        margin: 0 auto;
+    }
 
-@media only screen and (max-width: 320px){
-  .registration-container{
-    width: 80%;
-    margin: auto;
-  }
-  
 }
