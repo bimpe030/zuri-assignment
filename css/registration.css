@@ -133,7 +133,7 @@ ul {
 
 .registration-container{
     width: 40%;
-    height: 100%;
+    height: auto;
     margin: 0 auto;
     padding: 5rem 0 2rem 0;
 }

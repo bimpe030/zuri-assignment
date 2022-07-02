@@ -277,7 +277,7 @@ input:focus{
     }
 
     .sign-container{
-        height: 100%;
+        height: auto;
     }
 
     .nav .toggle-collapse {
