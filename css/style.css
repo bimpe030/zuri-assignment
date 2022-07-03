@@ -96,10 +96,6 @@ ul {
 
 /* -------------------------- Nav closes--------------------- */
 
-/* .upper-container{
-    height: 100%;
-} */
-
 .container{
     width: 80%;
     height: 100vh;
@@ -332,7 +328,7 @@ textarea {
 }
 
 .collapse {
-    height: 25rem !important;
+    height: 27rem !important;
 }
 
 /* -----------x----------Toggle Closes--------x------------*/
