@@ -128,7 +128,7 @@ body {
 /* ------------------------Login Page -------------------------*/
 
 .sign-cover {
-    padding: 6rem 0 5rem 0;
+    padding: 6rem 0 5rem 0 !important;
     height: 100vh;
 }
 
